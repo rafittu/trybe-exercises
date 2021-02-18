@@ -2,7 +2,7 @@ ol {
     background-color: yellow;
 }
 .par {
-    color: green;
+    color: limegreen;
 }
 .primo {
     text-transform:uppercase;
@@ -26,4 +26,19 @@ li {
 }
 .java {
     background-color: pink;
+}
+ul.aliados li:hover {
+    font-weight: bold;
+}
+#laranja:hover {
+    color: orange;
+}
+#verde:hover {
+    color: green;
+}
+#preto:hover {
+    color: black;
+}
+#amarela:hover {
+    color: yellow;
 }
