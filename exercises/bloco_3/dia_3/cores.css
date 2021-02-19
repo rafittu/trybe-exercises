@@ -1,0 +1,32 @@
+h1 {
+    text-align: center;
+    font-family: fantasy, sans-serif;
+}
+h3 {
+    font-family: sans-serif;
+}
+.impar {
+    font-style: italic;
+}
+div {
+    padding: 9px;
+}
+div:hover {
+    border-style: solid;
+}
+.primaria:hover {
+    background-color: yellow;
+}
+.secundaria:hover {
+    background-color: green;
+}
+.complementar:hover {
+    background-color: blue;
+    font-size: 2em;
+}
+.escura:hover {
+    background-color: brown;
+}
+.clara:hover {
+    background-color:lightpink;
+}

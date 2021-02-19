@@ -1,0 +1,44 @@
+ol {
+    background-color: yellow;
+}
+.par {
+    color: limegreen;
+}
+.primo {
+    text-transform:uppercase;
+}
+h1, h3 {
+    color: red;
+}
+h1 {
+    text-align: center;
+    font-size: 40px;
+    border: 1px solid black;
+}
+li {
+    font-size: 20px;
+}
+.italico {
+    font-weight: bold;
+}
+.top {
+    color: blue;
+}
+.java {
+    background-color: pink;
+}
+ul.aliados li:hover {
+    font-weight: bold;
+}
+#laranja:hover {
+    color: orange;
+}
+#verde:hover {
+    color: green;
+}
+#preto:hover {
+    color: black;
+}
+#amarela:hover {
+    color: yellow;
+}

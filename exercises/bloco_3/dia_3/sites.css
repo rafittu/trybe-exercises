@@ -1,0 +1,17 @@
+h1, p {
+    text-align: center;
+}
+h1 {
+    font-style: italic;
+}
+p {
+    font-weight: 600;
+}
+li:hover {
+    background-color:deepskyblue;
+    list-style: none;
+}
+li:active {
+    font-family: sans-serif;
+    list-style: none;
+}
