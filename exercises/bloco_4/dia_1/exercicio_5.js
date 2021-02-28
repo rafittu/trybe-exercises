@@ -69,3 +69,17 @@ else if (score >= 50 && score < 60){
 else {
     console.log('F');
 }
+
+
+// Exercício 8
+
+let a = 9;
+let b = 6;
+let c = 3;
+
+let numeroPar = false;
+
+if (a % 2 === 0 || b % 2 === 0 || c % 2 === 0){
+    numeroPar = true;
+}
+console.log(numeroPar);
