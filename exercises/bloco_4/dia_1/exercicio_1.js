@@ -33,3 +33,18 @@ else if (b > a && b > c){
 else {
     console.log('o maior número é o "c"');
 }
+
+
+// Exercício 4
+
+let number = c;
+
+if (number > 0){
+    console.log('c é um número positivo');
+}
+else if (number < 0){
+    console.log('c é um número negativo');
+}
+else {
+    console.log('c é igual a 0');
+}
