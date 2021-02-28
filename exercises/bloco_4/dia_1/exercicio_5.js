@@ -83,3 +83,17 @@ if (a % 2 === 0 || b % 2 === 0 || c % 2 === 0){
     numeroPar = true;
 }
 console.log(numeroPar);
+
+
+// Exercício 9
+
+let x = 1;
+let y = 3;
+let w = 8;
+
+let numeroImpar = false;
+
+if (x % 2 === 0 || y % 2 === 0 || w % 2 === 0){
+    numeroImpar = true;
+}
+console.log(numeroImpar);
