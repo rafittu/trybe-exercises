@@ -56,9 +56,9 @@ if (valoresImpares === 0){
 
 let menorValor = 420;
 
-for (let i = 0; i < numbers.length; i++){
-    if (numbers[i] < menorValor){
-        menorValor = numbers[i];
+for (let index = 0; index < numbers.length; index++){
+    if (numbers[index] < menorValor){
+        menorValor = numbers[index];
     }
 }
 
