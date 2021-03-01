@@ -50,3 +50,16 @@ if (valoresImpares === 0){
 } else {
     console.log(valoresImpares);
 }
+
+
+// Exercício 7
+
+let menorValor = 420;
+
+for (let i = 0; i < numbers.length; i++){
+    if (numbers[i] < menorValor){
+        menorValor = numbers[i];
+    }
+}
+
+console.log(menorValor);
