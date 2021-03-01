@@ -13,3 +13,17 @@ let info = {
 
   info['recorrente'] = 'Sim';
   console.log(info);
+
+
+  // Exercício 3
+
+  for (let key in info){
+      console.log(key);
+  }
+
+
+  // Exercício 4
+
+  for (let key in info){
+      console.log(info[key]);
+  }
