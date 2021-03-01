@@ -11,7 +11,7 @@ for (let valores = 0; valores < numbers.length; valores++) {
 
 let soma = 0;
 
-for (let i = 0; i < numbers.length; i++){
-    soma += numbers[i];
+for (let index = 0; index < numbers.length; index++){
+    soma += numbers[index];
 }
 console.log(soma);
