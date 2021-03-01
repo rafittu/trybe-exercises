@@ -33,3 +33,20 @@ for (let i = 0; i < numbers.length; i++){
 }
 
 console.log(maiorValor);
+
+
+// Exercício 6
+
+let valoresImpares = 0;
+
+for (let i = 0; i < numbers.length; i++){
+    if (numbers[i] % 2 === 0) {
+        valoresImpares += 1;
+    }
+}
+
+if (valoresImpares === 0){
+    console.log('nenhum valor ímpar encontrado');
+} else {
+    console.log(valoresImpares);
+}
