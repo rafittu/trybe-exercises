@@ -2,8 +2,8 @@
 
 let numbers = [];
 
-for (let i = 1; i <= 25; i += 1){
-    numbers.push(i);
+for (let index = 1; index <= 25; index += 1){
+    numbers.push(index);
 }
 
 console.log(numbers);
@@ -11,6 +11,6 @@ console.log(numbers);
 
 // Exercício 9
 
-for (let i = 0; i < numbers.length; i +=1){
-    console.log(numbers[i] / 2);
+for (let index = 0; index < numbers.length; index +=1){
+    console.log(numbers[index] / 2);
 }
