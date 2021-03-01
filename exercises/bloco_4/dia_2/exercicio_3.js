@@ -20,3 +20,16 @@ if (soma > 20){
 } else {
     console.log('valor menor ou igual a 20');
 }
+
+
+// Exercício 5
+
+let maiorValor = 0;
+
+for (let i = 0; i < numbers.length; i++){
+    if (numbers[i] > maiorValor) {
+        maiorValor = numbers[i];
+    }
+}
+
+console.log(maiorValor);
