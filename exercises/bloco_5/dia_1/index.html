@@ -42,7 +42,7 @@
 
        // Exercício 1
         function textDescription (text) {
-         document.getElementsByTagName('p')[0].innerText = text;
+          document.getElementsByTagName('p')[0].innerText = text;
         }  
         textDescription('Trabalhando na Google e feliz da vida!');
 
@@ -56,16 +56,24 @@
 
        // Exercício 3
        function centerBox(mainColor) {
-         document.getElementsByClassName('center-content')[0].style.background = mainColor;
+          document.getElementsByClassName('center-content')[0].style.background = mainColor;
        }
        centerBox('white');
 
 
        // Exercício 4
        function fixTitle(hOne) {
-         document.getElementsByTagName('h1')[0].innerText = hOne;
+          document.getElementsByTagName('h1')[0].innerText = hOne;
         }  
         fixTitle('Exercício 5.1 - JavaScript');
+
+
+        // Exercício 5
+        function transformText(lowerUpper) {
+          document.getElementsByTagName('p')[0].style.textTransform = lowerUpper;
+        }
+        transformText('uppercase');
+        
 
         /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
@@ -76,7 +84,7 @@
  OK - Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).
  OK - Crie uma função que mude a cor do quadrado vermelho para branco.
  OK - Crie uma função que corrija o texto da tag <h1>.
- Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
+ OK - Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
  Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
     </script>
