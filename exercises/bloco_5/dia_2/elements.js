@@ -29,3 +29,13 @@ document.getElementById('primeiroFilhoDoFilho').appendChild(newSon2);
 document.getElementById('filhoDoPrimeiroFilhoDoFilho').parentNode.parentNode.nextElementSibling
 
 // Remova todos os elementos da página, menos pai , elementoOndeVoceEsta e primeiroFilhoDoFilho
+let divs = document.querySelectorAll('div');
+
+for (index = 0; index < divs.length; index += 1) {
+    let elements = divs[index];
+    let dadElements = elements.parentNode;
+    if (elements.id === 'segundoEUltimoFilhoDoFilho' || elements.id === 'primeiroFilho' || elements.id === 'terceiroFilho' || elements.id === 'quartoEUltimoFilho' || elements.id === 'irmaoElementoOndeEstou' || elements.id === 'terceiroFilhoElementoOndeEstou' || elements.id === 'filhoDoPrimeiroFilhoDoFilho') {
+        let divsExtraidas = dadElements.removeChild(elements);
+        console.log(divsExtraidas);
+    }
+}
