@@ -76,12 +76,16 @@
 
 
         // Exercício 6
-        function showText(paragraph) {
-         document.getElementsByTagName('p')
+        function showText() {
+          let paragraph = document.getElementsByTagName('p');
+
              for (index = 0; index < paragraph.length; index +=1) {
-             console.log(paragraph);
-            }
+               let salvar = paragraph[index].innerText;
+               console.log(salvar);
+             }
         }
+        showText();
+        
         
 
         /*
