@@ -27,3 +27,5 @@ document.getElementById('primeiroFilhoDoFilho').appendChild(newSon2);
 
 // A partir desse filho criado, acesse terceiroFilho
 document.getElementById('filhoDoPrimeiroFilhoDoFilho').parentNode.parentNode.nextElementSibling
+
+// Remova todos os elementos da página, menos pai , elementoOndeVoceEsta e primeiroFilhoDoFilho
