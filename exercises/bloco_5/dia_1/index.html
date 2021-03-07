@@ -76,7 +76,15 @@
 
 
         // Exercício 6
-       
+        function showText() {
+          let paragraph = document.getElementsByTagName('p');
+
+             for (index = 0; index < paragraph.length; index +=1) {
+               let value = paragraph[index].innerText;
+               console.log(value);
+             }
+        }
+        showText();
         
 
         /*
@@ -89,7 +97,7 @@
  OK - Crie uma função que mude a cor do quadrado vermelho para branco.
  OK - Crie uma função que corrija o texto da tag <h1>.
  OK - Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
- Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+ OK - Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
     </script>
   </body>
