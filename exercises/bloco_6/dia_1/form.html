@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Formulario</title>
+</head>
+<body>
+  <form action=""> 
+    <fieldset>
+      <legend>DADOS PESSOAIS</legend>
+      <label for="nome">Nome completo: 
+        <input type="text" name="name" id="nome" maxlength="40" required>
+      </label>
+
+      <label for="e-mail">E-mail:
+        <input type="email" name="e-mail" id="e-mail" maxlength="50" required>
+      </label>
+
+      <label for="cpf">CPF:
+        <input type="text" name="CPF" id="cpf" maxlength="11" required>
+      </label>
+
+      <label for="endereco"> Endereço:
+        <input type="text" name="name" id="endereco" maxlength="200" required>
+      </label>
+
+      <label for="cidade">Cidade:
+        <input type="text" name="name" id="cidade" maxlength="28" required>
+      </label>
+
+      <label for="estado">Estado:
+        <select name="estado" id="estado" required></select>
+      </label>
+
+      <label for="complemento1">Casa
+        <input type="radio" value="casa" name="complemento" id="casa" required>
+      </label>
+      <label for="complemento2">Apartamento
+        <input type="radio" value="apt" name="complemento" id="apartamento" required>
+      </label>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>ÚLTIMO EMPREGO</legend>
+      <label for="complemento1">Resumo do currículo
+        <textarea maxlength="1000" required></textarea>
+      </label>
+
+      <label for="cargo">Cargo:
+        <input type="text" name="cargo" id="cargo" maxlength="40" required>
+      </label>
+
+      <label for="descricao-cargo">Descrição do cargo:
+        <input type="text" name="descricao-cargo" id="descricao-cargo" maxlength="500" required>
+      </label>
+
+      <label for="data">Data de início
+        <input type="date" name="data" id="data" required>
+      </label>
+    </fieldset>
+  </form>
+  <br>
+  <button>Limpar</button>
+  <button>Enviar</button>
+
+</body>
+</html>
