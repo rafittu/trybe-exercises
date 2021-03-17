@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bulma/css/bulma.css">
+  <title>Formulario</title>
+</head>
+<body>
+  <form action=""> 
+    <fieldset class="section">
+      <legend class="title">DADOS PESSOAIS</legend>
+      <label class="label" for="nome">Nome completo: 
+        <input class="input" type="text" name="name" id="nome" maxlength="40" required>
+      </label>
+      <label class="label" for="e-mail">E-mail:
+        <input class="input" type="email" name="e-mail" id="e-mail" maxlength="50" required>
+      </label>
+      <label class="label" for="cpf">CPF:
+        <input class="input" type="text" name="CPF" id="cpf" maxlength="11" required>
+      </label>
+      <label class="label" for="endereco"> Endereço:
+        <input class="input" type="text" name="name" id="endereco" maxlength="200" required>
+      </label>
+      <label class="label" for="cidade">Cidade:
+        <input class="input" type="text" name="name" id="cidade" maxlength="28" required>
+      </label>
+      <label class="label" for="estado">Estado:
+        <select class="select" name="estado" id="estado" required></select>
+      </label>
+      <label class="radio" for="complemento1">Casa
+        <input type="radio" value="casa" name="complemento" id="casa" required>
+      </label>
+      <label class="radio" for="complemento2">Apartamento
+        <input type="radio" value="apt" name="complemento" id="apartamento" required>
+      </label>
+    </fieldset>
+    <br>
+    <fieldset class="section">
+      <legend class="subtitle">ÚLTIMO EMPREGO</legend>
+      <label class="label" for="complemento1">Resumo do currículo:
+        <textarea class="textarea" maxlength="1000" required></textarea>
+      </label>
+      <label class="label" for="cargo">Cargo:
+        <input class="input" type="text" name="cargo" id="cargo" maxlength="40" required>
+      </label>
+      <label class="label" for="descricao-cargo">Descrição do cargo:
+        <input class="input" type="text" name="descricao-cargo" id="descricao-cargo" maxlength="500" required>
+      </label>
+      <label class="label" for="data">Data de início
+        <input type="date" name="data" id="data" required>
+      </label>
+    </fieldset>
+    <div>
+      <button id="clear" class="button is-warning" type="reset">Limpar</button>
+      <button id="submit" class="button is-success" type="submit">Enviar</button>
+    </div>
+  </form>
+  <br>
+
+</body>
+<script src="script.js"></script>
+</html>
