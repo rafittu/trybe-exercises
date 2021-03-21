@@ -12,15 +12,20 @@ body {
 .header-container {
   background-color: #5C687C;
   display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
 }
 
 .logo-container {
   display: flex;
   justify-content: center;
+  width: 268px;
 }
 
 .menu-container {
   display: flex;
+  align-self: center;
+  width: 500px;
 }
 
 .menu-container ul {
@@ -35,4 +40,12 @@ body {
   font-size: 1.3rem;
   list-style: none;
   margin-right: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: flex;
+    justify-content: space-around;
+    width: 750px;
+  }
 }
