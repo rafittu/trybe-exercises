@@ -39,3 +39,20 @@ console.log(`Os números ${oddsAndEvens} se encontram ordenados de forma crescen
 
 const factorial = (number) => number > 1 ? number * factorial(number - 1) : 1;
 console.log(factorial(3));
+
+// Exercício 2
+
+const longestWord = (text) => {
+  let wordArray = text.split(' ');
+  let maxLength = 0;
+  let result = '';
+
+  for (const word of wordArray) {
+    if (word.length > maxLength) {
+      maxLength = word.length;
+      result = word;
+    }
+  }
+  return result;
+};
+console.log(longestWord("Qual a maior palavra ?"));
