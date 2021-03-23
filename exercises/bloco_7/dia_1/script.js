@@ -12,7 +12,7 @@ function testingScope(escopo) {
 
 testingScope(true);
 
-// Exercício 1
+// Parte I - Exercício 1
 
 const testingScope = (escopo) => {
   if (escopo === true) {
@@ -34,3 +34,8 @@ const oddsAndEvens = [13, 3, 4, 10, 7, 2];
 oddsAndEvens.sort(function(a, b){return a - b});
 
 console.log(`Os números ${oddsAndEvens} se encontram ordenados de forma crescente!`);
+
+// Parte II - Exercício 1
+
+const factorial = (number) => number > 1 ? number * factorial(number - 1) : 1;
+console.log(factorial(3));
