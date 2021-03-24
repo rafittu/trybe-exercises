@@ -1,17 +1,3 @@
-function testingScope(escopo) {
-  if (escopo === true) {
-    var ifScope = 'Não devo ser utilizada fora do meu escopo (if)';
-    ifScope = ifScope + ' ótimo, fui utilizada no escopo !';
-    console.log(ifScope);
-  } else {
-    var elseScope = 'Não devo ser utilizada fora meu escopo (else)';
-    console.log(elseScope);
-  }
-  console.log(ifScope + ' o que estou fazendo aqui ? :O'); // Se necessário esta linha pode ser removida.
-}
-
-testingScope(true);
-
 // Parte I - Exercício 1
 
 const testingScope = (escopo) => {
@@ -56,3 +42,16 @@ const longestWord = (text) => {
   return result;
 };
 console.log(longestWord("Qual a maior palavra ?"));
+
+// Exercício 3
+
+function contador() {
+  let text = document.getElementById("text");
+  let clickCount = 0;
+
+  document.getElementById("click").addEventListener("click", () => text.innerHTML = clickCount += 1);
+  document.getElementById("clear").addEventListener("click", () => text.innerHTML = clickCount = 0);
+
+  return text;
+}
+contador();
