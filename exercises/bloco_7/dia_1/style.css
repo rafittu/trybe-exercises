@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  margin-top: 300px;
+  padding: 9px;
+}
+
+#count {
+  width: 180px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-around;
+  width: 150px;
+}
