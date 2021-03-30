@@ -45,21 +45,28 @@ console.log(checkAnswer(correctAnswer)(userAnswer));
 
 // 8.1 - Exercício 4
 
-const checkAnswer = (rightAnswer, userAnswer) => {
-  let result = 0;
+const checkAnswer = (correctAnswer, answerToVerify) => {
 
-  for (let index = 0; index < rightAnswer.length; index += 1) {
-    if (userAnswer[index] === 'N.A') {
-      result = result;
-    } else if (rightAnswer[index] === userAnswer[index]) {
-      result += 1;
-    }
-    result -= 0.5;
-  };
+  if (answerToVerify === 'N.A') {
+    return 0;
+  } else if (correctAnswer === answerToVerify) {
+    return 1;
+  }
+  return -0.5;
 
-  return result;
 };
 
-// const verifyResult = (correctAnswers, answersToVerify, checkAnswer) => {};
+const verifyResult = (rightAnswers, studentAnswers, callBackCheckAnswer) => {
+  let result = 0;
 
-console.log(checkAnswer(['A', 'B', 'C'], ['A', 'N.A', 'B']));
+  for (let index = 0; index <= rightAnswers.length; index += 1) {
+    result += callBackCheckAnswer(rightAnswers[index], studentAnswers[index]);
+  };
+
+  return `Sua pontuação é: ${result} pts`;
+};
+
+const rightAnswers = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
+const studentAnswers = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
+
+console.log(verifyResult(rightAnswers, studentAnswers, checkAnswer));
