@@ -67,10 +67,10 @@ function smallerName() {
   let nameBook;
   
   books.forEach((book) => {
-    if (book.name.length < nameBook.length) {
+    if (!nameBook || book.name.length < nameBook.length) {
       nameBook = book.name;
     }
-  })
+  });
 
   return nameBook;
 };
