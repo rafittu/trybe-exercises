@@ -1,4 +1,3 @@
-
 const assert = require('assert');
 
 const books = [
@@ -64,8 +63,16 @@ const books = [
   },
 ];
 
-// function allNames() {
-//   return books.filter((book) => book.author.name).reduce((acc, curr) => (`${acc} ${curr}`), 'Nomes:');
-// };
+const expectedResult = 43;
 
-// assert.deepStrictEqual(allNames(), 'Nomes: George R. R. Martin, J. R. R. Tolkien, Isaac Asimov, Frank Herbert, Stephen King, H. P. Lovecraft.');
+function averageAge() {
+  const numberOfAuthor = books.length;
+
+  const sumOfAges = books.reduce((acc, book) => (
+    acc + (book.releaseYear - book.author.birthYear)
+  ), 0);
+
+  return sumOfAges / numberOfAuthor;
+};
+
+assert.strictEqual(averageAge(), expectedResult);
