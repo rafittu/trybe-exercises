@@ -64,8 +64,19 @@ const books = [
   },
 ];
 
-// function allNames() {
-//   return books.filter((book) => book.author.name).reduce((acc, curr) => (`${acc} ${curr}`), 'Nomes:');
+function allNames() {
+  return books.filter((book) => book.author.name).reduce((acc, curr) => (`${acc} ${curr}`), 'Nomes:');
+};
+
+assert.deepStrictEqual(allNames(), 'Nomes: George R. R. Martin, J. R. R. Tolkien, Isaac Asimov, Frank Herbert, Stephen King, H. P. Lovecraft.');
+
+
+
+// const reduceNames = (acc, book, index, array) => {
+//   if (index === array.length - 1) return `${acc} ${book.author.name}.`;
+//   return `${acc} ${book.author.name},`;
 // };
 
-// assert.deepStrictEqual(allNames(), 'Nomes: George R. R. Martin, J. R. R. Tolkien, Isaac Asimov, Frank Herbert, Stephen King, H. P. Lovecraft.');
+// function allNames() {
+//   return books.reduce(reduceNames, 'Nomes:');
+// }
