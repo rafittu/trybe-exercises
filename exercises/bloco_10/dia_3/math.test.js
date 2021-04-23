@@ -22,7 +22,7 @@ describe('Testing math mock functions', () => {
     expect(math.somar(1, 7)).toBe(8);
   });
 
-  // Same test as above, but using async mode =>
+  // Same test as above, but resolving async function =>
   it('Testa a chamada, o retorno e os parâmetros passados na funcao somar', async () => {
     math.somar = jest.fn().mockImplementation((a, b) => Promise.resolve(a + b));
     const result = await math.somar(3, 6);
