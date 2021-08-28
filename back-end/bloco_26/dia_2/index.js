@@ -1,7 +1,4 @@
 function math(a, b, c) {
-
-  console.log(`${a}, ${b}, ${c}`);  
-
   const promise = new Promise((resolve, reject) => {
     if (typeof(a) !== 'number' || typeof(b) !== 'number' || typeof(c) !== 'number') {
       reject(Error("Informe apenas números"))
@@ -24,16 +21,21 @@ function getRandomNumber() {
   return number;
 };
 
-function callMath() {
-  let a = getRandomNumber();
-  let b = getRandomNumber();
-  let c = getRandomNumber();
+async function callMath() {
+  const a = getRandomNumber();
+  const b = getRandomNumber();
+  const c = getRandomNumber();
 
-  console.log(`${a}, ${b}, ${c}`);
-
-  math(a, b, c)
-  .then(result => console.log(`${result}`))
-  .catch(err => console.log(`${err}`));
+  try {
+    const result = await math(a, b, c)
+    console.log(result);
+  } catch (err) {
+    console.log(`${err.message}`);
+  };
+  
+  // math(a, b, c)
+  // .then(result => console.log(`${result}`))
+  // .catch(err => console.log(`${err}`));
 };
 
 callMath();
